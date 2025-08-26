@@ -35,5 +35,16 @@ const perguntas = [
         alternativas: [
             "Debbie Harry",
             "Joan Jett"]
-    }
-]
+    },
+];
+
+Let atual = 0;
+Let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixasPerguntas.textContent = perguntaAtual.enunciado;
+
+}
+
+mostraPergunta();
